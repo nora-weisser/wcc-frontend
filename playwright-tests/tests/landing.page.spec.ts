@@ -7,13 +7,13 @@ test('should display complete navigation menu', async ({
   landingPage,
 }) => {
   await page.goto('/');
-  await expect(landingPage.homeLink).toBeVisible();
-  await expect(landingPage.mentorshipDropdown).toBeVisible();
-  await expect(landingPage.programmesDropdown).toBeVisible();
-  await expect(landingPage.eventsLink).toBeVisible();
-  await expect(landingPage.blogLink).toBeVisible();
-  await expect(landingPage.jobsLink).toBeVisible();
-  await expect(landingPage.aboutUsDropdown).toBeVisible();
+  await expect(landingPage.link('Home')).toBeVisible();
+  await expect(landingPage.dropdown('Mentorship')).toBeVisible();
+  await expect(landingPage.dropdown('Programmes')).toBeVisible();
+  await expect(landingPage.link('Events')).toBeVisible();
+  await expect(landingPage.link('Blog')).toBeVisible();
+  await expect(landingPage.link('Jobs')).toBeVisible();
+  await expect(landingPage.dropdown('About Us')).toBeVisible();
 });
 
 test('Join Slack button navigates to Slack invite in the new page', async ({
