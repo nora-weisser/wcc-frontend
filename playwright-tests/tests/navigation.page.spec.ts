@@ -42,7 +42,7 @@ navTests.forEach(
   },
 );
 
-test('@NAV-005: Validate Find a mentor Button', async ({
+test('NAV-005: Validate Find a mentor Button', async ({
   basePage,
   homePage,
 }) => {

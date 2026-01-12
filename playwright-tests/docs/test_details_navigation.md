@@ -101,7 +101,7 @@ Tests to check links and page navigations.
 - The user is redirected to the Jobs page with url "/mentors"
 - "Meet Our Mentors!" text should be present
 
-**Status:** Pending :x:
+**Status:** Done :white_check_mark:
 
 ---
 
